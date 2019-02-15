@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">JAL Application</string>
     <string name="textViewMsg">24点游戏是指给定4个整数，通过+ - * /以及圆括号等运算符，将四个数的运算结果组成的值为24，此游戏解法不唯一，充满乐趣</string>
+    <string name="font_blue">蓝色</string>
+    <string name="font_green">绿色</string>
+    <string name="font_red">红色</string>
 </resources>
