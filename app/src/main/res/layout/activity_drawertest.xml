@@ -1,0 +1,43 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/topbar"
+            layout="@layout/view_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp" />
+
+        <FrameLayout
+            android:id="@+id/fly_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fg_left_menu"
+        android:name="com.example.administrator.myapplication.LeftFragment"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:tag="LEFT"
+        tools:layout="@layout/fg_left" />
+
+    <fragment
+        android:id="@+id/fg_right_menu"
+        android:name="com.example.administrator.myapplication.RightFragment"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:tag="RIGHT"
+        tools:layout="@layout/fg_right" />
+
+</android.support.v4.widget.DrawerLayout>
